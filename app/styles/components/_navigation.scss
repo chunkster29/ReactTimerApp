@@ -1,4 +1,4 @@
-.top-bar, .top-bar ul{
+.top-bar, .top-bar ul {
   background-color: $nav-background;
 }
 
@@ -10,5 +10,9 @@
   .menu > .menu-text > a {
     display: inline;
     padding: 0;
+  }
+
+  .active-link {
+    font-weight: bold;
   }
 }

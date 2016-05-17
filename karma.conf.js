@@ -1,4 +1,4 @@
-var webpackConfig = require('./webpack.config.js')
+var webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
   config.set({
@@ -13,11 +13,11 @@ module.exports = function (config) {
     client: {
       mocha: {
         timeout: '5000'
+      }
+    },
+    webpack: webpackConfig,
+    webpackServer: {
+      noInfo: true
     }
-  },
-  webpack: webpackConfig,
-  webpackServer: {
-    noInfo: true
-  }
   });
 };
